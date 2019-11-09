@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <title>Star and Baxter's Cat Fan Club</title>
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+     <meta name="Author" content="Ed Duggan" />
+          <meta name ="description" Content="Sample website of Star and Baxter's Fan Club website" />
+          <meta Name="keywords" content="cats, fan club, pictures, videos, Star, Baxter, sample website" />
+          <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+          $('#previous').on('click', function(){
+            // Change to the previous image
+            $('#im_' + currentImage).stop().fadeOut(1);
+            decreaseImage();
+            $('#im_' + currentImage).stop().fadeIn(1);
+          }); 
+          $('#next').on('click', function(){
+            // Change to the next image
+            $('#im_' + currentImage).stop().fadeOut(1);
+            increaseImage();
+            $('#im_' + currentImage).stop().fadeIn(1);
+          }); 
+
+          var currentImage = 1;
+          var totalImages = 25;
+
+          function increaseImage() {
+            /* Increase currentImage by 1.
+            * Resets to 1 if larger than totalImages
+            */
+            ++currentImage;
+            if(currentImage > totalImages) {
+              currentImage = 1;
+            }
+          }
+          function decreaseImage() {
+            /* Decrease currentImage by 1.
+            * Resets to totalImages if smaller than 1
+            */
+            --currentImage;
+            if(currentImage < 1) {
+              currentImage = totalImages;
+            }
+          }
+          window.setInterval(function() {
+            $('#previous').click();
+          }, 4000);
+        });
+    </script>
+   </head>
+   <body>
+      <header id="main-header">
+         <div class="container">
+         <h1>Pictures of Star and Baxter</h1>
+         </div>
+      </header>
+      
+      <nav id="navbar">
+         <div class="container">
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="star.html">Star</a></li>
+               <li><a href="baxter.html">Baxter</a></li>
+               <li class="current"><a href="pictures.html">Pictures</a></li>
+               <li><a href="videos.html">Videos</a></li>
+            </ul>
+         </div>
+      </nav>
+
+      <div id="showContainer">
+
+          <div class="imageContainer" id="im_1">
+            <img src="images\1.JPG" alt= "Star_and_Baxter" />
+            <div class="caption">
+              
+            </div>
+          </div>
+          <div class="imageContainer" id="im_2">
+            <img src="images\2.JPG" alt= "Star_and_Baxter" />
+            <div class="caption">
+              
+            </div>
+          </div>
+          <div class="imageContainer" id="im_3">
+            <img src="images\3.JPG" alt= "Star_and_Baxter" />
+            <div class="caption">
+              
+            </div>
+          </div>
+          <div class="imageContainer" id="im_4">
+            <img src="images\4.JPG" alt= "Star_and_Baxter" />
+            <div class="caption">
+              
+            </div>
+          </div>
+          <div class="imageContainer" id="im_5">
+            <img src="images\5.JPG" alt= "Star_and_Baxter" />
+            <div class="caption">
+              
+            </div>
+          </div>
+          <div class="imageContainer" id="im_6">
+            <img src="images\6.JPG" alt= "Star_and_Baxter" />
+            <div class="caption">
+              
+            </div>
+          </div>
+          <div class="imageContainer" id="im_7">
+            <img src="images\7.JPG" alt= "Star_and_Baxter" />
+            <div class="caption">
+              
+            </div>
+          </div>
+          <div class="imageContainer" id="im_8">
+            <img src="images\8.JPG" alt= "Star_and_Baxter" />
+            <div class="caption">
+              
+            </div>
+          </div>
+          <div class="imageContainer" id="im_9">
+            <img src="images\9.JPG" alt= "Star_and_Baxter" />
+            <div class="caption">
+              
+            </div>
+          </div>
+          <div class="imageContainer" id="im_10">
+            <img src="images\10.JPG" alt= "Star_and_Baxter" />
+            <div class="caption">
+              
+            </div>
+          </div>
+          <div class="imageContainer" id="im_11">
+            <img src="images\11.JPG" alt= "Star_and_Baxter" />
+            <div class="caption">
+              
+            </div>
+          </div>
+          <div class="imageContainer" id="im_12">
+            <img src="images\12.JPG" alt= "Star_and_Baxter" />
+            <div class="caption">
+              
+            </div>
+          </div>
+          <div class="imageContainer" id="im_13">
+            <img src="images\13.JPG" alt= "Star_and_Baxter" />
+            <div class="caption">
+              
+            </div>
+          </div>
+          <div class="imageContainer" id="im_14">
+            <img src="images\14.JPG" alt= "Star_and_Baxter" />
+            <div class="caption">
+              
+            </div>
+          </div>
+          <div class="imageContainer" id="im_15">
+            <img src="images\15.JPG" alt= "Star_and_Baxter" />
+            <div class="caption">
+              
+            </div>
+          </div>
+          <div class="imageContainer" id="im_16">
+            <img src="images\16.JPG" alt= "Star_and_Baxter" />
+            <div class="caption">
+              
+            </div>
+          </div>
+          <div class="imageContainer" id="im_17">
+            <img src="images\17.JPG" alt= "Star_and_Baxter" />
+            <div class="caption">
+              
+            </div>
+          </div>
+          <div class="imageContainer" id="im_18">
+            <img src="images\18.JPG" alt= "Star_and_Baxter" />
+            <div class="caption">
+              
+            </div>
+          </div>
+          <div class="imageContainer" id="im_19">
+            <img src="images\19.JPG" alt= "Star_and_Baxter" />
+            <div class="caption">
+              
+            </div>
+          </div>
+          <div class="imageContainer" id="im_20">
+            <img src="images\20.JPG" alt= "Star_and_Baxter" />
+            <div class="caption">
+              
+            </div>
+          </div>
+          <div class="imageContainer" id="im_21">
+            <img src="images\21.JPG" alt= "Star_and_Baxter" />
+            <div class="caption">
+              
+            </div>
+          </div>
+          <div class="imageContainer" id="im_22">
+            <img src="images\22.JPG" alt= "Star_and_Baxter" />
+            <div class="caption">
+              
+            </div>
+          </div>
+          <div class="imageContainer" id="im_23">
+            <img src="images\23.JPG" alt= "Star_and_Baxter" />
+            <div class="caption">
+              
+            </div>
+          </div>
+          <div class="imageContainer" id="im_24">
+            <img src="images\24.JPG" alt= "Star_and_Baxter" />
+            <div class="caption">
+              
+            </div>
+          </div>
+          <div class="imageContainer" id="im_25">
+            <img src="images\25.JPG" alt= "Star_and_Baxter" />
+            <div class="caption">
+              
+            </div>
+          </div>
+
+          <div class="navButton" id="next">&#10094;</div>
+          <div class="navButton" id="previous">&#10095;</div>
+
+      </div>
+
+      <footer id="main-footer">
+         <p>Copyright &copy; 2019 Cat Fan Club
+         </p>
+      </footer>
+   </body>
+
+
+</html>
