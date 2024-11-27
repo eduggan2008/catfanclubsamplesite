@@ -7,25 +7,44 @@ body{
    margin:10px;
 }
 
-@media(min-width:700px){
-  .container{
-   width:80%;
-   margin:auto;
-   overflow:hidden;
+html {
+    font-family: helvetica, arial;
   }
-
-  .container-1{
-     display:flex;
+  #showContainer {
+    /* Main wrapper for all images */
+    width: 670px;
+    padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
   }
-}
-
-@media(min-width:500px){
-
-  .container-2{
-     display:flex;
-     flex-wrap:wrap;
+  .navButton {
+    /* Make buttons look nice */ 
+    cursor: pointer;
+    float: left;
+    width: 25px;
+    height: 22px;
+    padding: 10px;
+    margin-right: 5px;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background: #000000;
+    opacity: 0.65;
+    user-select: none;
   }
-}
+  .navButton:hover {
+    opacity: 1;
+  }
+  .caption {
+    float: right;
+  }
+  .imageContainer:not(:first-child) {
+    /* Hide all images except the first */
+    display: none;
+  }
 
 .container-2 div{
   border:2px #ccc solid;
@@ -66,8 +85,8 @@ body{
 }
 
 #showcase{
-   background-image:url('../images/Star_and_Baxter.jpg');
-   background-position:center right;
+   background-image:url('../images/Star_and_Baxter.JPG');
+   background-position: center;
    min-height:400px;
    margin-bottom:30px;
    text-align:center;
@@ -125,41 +144,23 @@ body{
      font-size:14px;
 }
 
-html {
-        font-family: helvetica, arial;
+      @media(min-width:700px){
+        .container{
+         width:80%;
+         margin:auto;
+         overflow:hidden;
+        }
+      
+        .container-1{
+           display:flex;
+        }
       }
-      #showContainer {
-        /* Main wrapper for all images */
-        width: 670px;
-        padding: 0;
-        margin: 0 auto;
-        overflow: hidden;
-        position: relative;
+      
+      @media(min-width:500px){
+      
+        .container-2{
+           display:flex;
+           flex-wrap:wrap;
+        }
       }
-      .navButton {
-        /* Make buttons look nice */ 
-        cursor: pointer;
-        float: left;
-        width: 25px;
-        height: 22px;
-        padding: 10px;
-        margin-right: 5px;
-        overflow: hidden;
-        text-align: center;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        background: #000000;
-        opacity: 0.65;
-        user-select: none;
-      }
-      .navButton:hover {
-        opacity: 1;
-      }
-      .caption {
-        float: right;
-      }
-      .imageContainer:not(:first-child) {
-        /* Hide all images except the first */
-        display: none;
-      }
+      
