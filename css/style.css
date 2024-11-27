@@ -90,6 +90,7 @@ html {
    min-height:400px;
    margin-bottom:30px;
    text-align:center;
+   z-index: 0;
 }
 
 #showcase h1{
@@ -97,6 +98,7 @@ html {
    font-size:50px;
    line-height:1.6em;
    padding-top:20px;
+   z-index: 1;
 }
 
 #main{
